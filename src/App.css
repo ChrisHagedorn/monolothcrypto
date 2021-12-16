@@ -1,0 +1,284 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap');
+
+body {
+  background: #000000;
+  font-family: 'Lucida Console', sans-serif;
+  font-weight: lighter;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 600px;
+  margin: 10px auto 0;
+  word-break: break-all;
+  /*border: 1px solid rgb(255, 255, 255);*/
+  overflow: hidden;
+
+}
+
+.bloc-tabs {
+  display: flex;
+}
+.tabs {
+  /*font-family: 'M PLUS 1 Code', sans-serif; */
+  font-family: 'Lucida Console';
+  font-weight: lighter;
+
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  background-color: rgba(0,0,0,0.01);
+  cursor: pointer;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  color: white;
+
+}
+.tabs:not(:last-child){
+  /*border-right: 1px solid rgb(255, 255, 255);*/
+}
+
+.active-tabs  {
+  background-color: rgba(0,0,0,0.01);
+  color: rgb(173, 173, 173);
+  border-bottom: 1px solid transparent;
+
+
+}
+
+/*.active-tabs::before {*/
+/*  content: "";*/
+/*  display: block;*/
+/*  position: absolute;*/
+/*  top: -5px;*/
+/*  left: 50%;*/
+/*  transform: translateX(-50%);*/
+/*  width: calc(100% + 2px);*/
+/*  height: 5px;*/
+/*  background: rgb(241, 142, 88);*/
+/*}*/
+
+
+
+button {
+  border: none;
+  
+}
+.content-tabs {
+  flex-grow : 1;
+}
+.content {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  padding: 20px;
+  width: 100%;
+  display: none;
+  height: auto;
+
+}
+.content h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 20px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  margin: 20px 20px 20px 0px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.active-content {
+  display: block;
+  border: 0.5px solid white;
+  border-radius: 25px;
+  padding: 20px;
+  max-height: 100%;
+}
+.active-content p{
+  animation: fadeIn ease-in 1s;
+}
+
+.active-content h2{
+  animation: fadeIn ease-in 1s;
+}
+
+.active-content img{
+  animation: fadeIn ease-in 1s;
+
+}
+
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 10px 20px;
+  position: absolute;/*Need to change if socials need to move */
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 50px;
+}
+.logo{
+  max-width:150px;
+  max-height:300px;
+  vertical-align: middle;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hrStyle{
+  height: 2px;
+  color: #ffffff;
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.background-video{
+  background: url(logo.png);
+  background-size: cover;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+
+}
+
+.our-team-icons {
+  border-radius: 50%;
+  height: 128px;
+  width: 128px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.crypto-logo {
+  height: 128px;
+  width: 128px;
+  padding: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  filter: grayscale(100%); /* Can remove - polkadot kinda uggs*/
+
+}
+.crypto-logo:hover{
+  -webkit-animation: shake 1s;
+  animation: shake 1s;
+}
+
+.crypto-logo-container{
+  text-align: center;
+}
+
+.our-team{
+  width: 33%;
+  display: inline-block;
+  padding: 10px;
+
+}
+
+.our-team p{
+  font-size: 10px;
+  display: inline-block;
+  float: left;
+  text-align: left;
+}
+.our-team h2{
+  font-size: 14px;
+  text-align: center;
+
+}
+
+@media all and (max-width: 800px) {
+
+  .content p {
+    color: #ffffff;
+  }
+
+  .container{
+    width: 295px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0px auto 0;
+    overflow: hidden;
+  }
+
+  .tabs{
+    font-family: 'Lucida Console';
+    font-weight: lighter;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.01);
+    cursor: pointer;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    color: white;
+    font-size: 6px;
+  }
+  .hrStyle {
+    width: 275px;
+  }
+  .logo{
+    width: 50px;
+    height: 70px;
+  }
+  .content p{
+    font-size: 10px;
+  }
+  .our-team h2{
+    font-size: 12px;
+  }
+  .our-team{
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+
+  }
+  .icon-footer {
+    visibility: hidden;
+  }
+  body {
+    background: #000000;
+    font-family: 'Lucida Console', sans-serif;
+    font-weight: lighter;
+  }
+
+
+}
