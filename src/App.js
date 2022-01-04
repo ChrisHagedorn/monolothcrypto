@@ -8,16 +8,17 @@ import Audio from "./Audio";
 
 function App() {
 
-  return (
-    <div className="App">
-        <Bg/>
-        <Logo />
-        <Hr/>
-        <Tabs />
-        <Footer />
-        <Audio />
-    </div>
-  );
+    return (
+        <div className="App">
+            <Bg/>
+            <Logo/>
+            <Hr/>
+            <Tabs/>
+            <Footer/>
+            <Audio/>
+        </div>
+)
+    ;
 }
-    
+
 export default App;

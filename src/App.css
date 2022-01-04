@@ -30,7 +30,7 @@ body {
 }
 .tabs {
   /*font-family: 'M PLUS 1 Code', sans-serif; */
-  font-family: 'Lucida Console';
+  font-family: 'Lucida Console', sans-serif;
   font-weight: lighter;
 
   padding: 15px;
@@ -147,8 +147,8 @@ button {
   margin-bottom: 50px;
 }
 .logo{
-  max-width:150px;
-  max-height:300px;
+  max-width:125px;
+  max-height:250px;
   vertical-align: middle;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -177,8 +177,8 @@ button {
 
 .our-team-icons {
   border-radius: 50%;
-  height: 128px;
-  width: 128px;
+  height: 96px;
+  width: 96px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -223,7 +223,51 @@ button {
 
 }
 
-@media all and (max-width: 800px) {
+.button {
+  color: white;
+  background-color: rgba(0,0,0,0.1);
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  margin-left: 10px;
+  font-family: 'Lucida Console', sans-serif;
+  font-weight: lighter;
+  font-size: 10px;
+}
+.button:hover{
+  cursor: pointer;
+  color: darkolivegreen;
+}
+
+.viewOpenSea{
+  padding: 10px 10px 10px 10px;
+  color: white;
+  background-color: rgba(0,0,0,0.1);
+  font-family: 'Lucida Console', sans-serif;
+  font-weight: lighter;
+  font-size: 10px;
+}
+.viewOpenSea:link{
+  color: white;
+  text-decoration: none;
+}
+.viewOpenSea:hover{
+  color: darkolivegreen;
+}
+.musicState{
+  color: white;
+  font-size: 10px;
+  margin-left: 10px;
+  padding: 10px 10px 10px 10px;
+
+}
+
+.audio-container{
+  bottom: 0px;
+  position: absolute;
+}
+
+@media all and (max-width: 850px) {
 
   .content p {
     color: #ffffff;
@@ -280,5 +324,41 @@ button {
     font-weight: lighter;
   }
 
+  /*Audio*/
 
+  .audio-container{
+    position: absolute;
+    top: 0px;
+  }
+  .button {
+    font-size: 7px;
+  }
+
+  .viewOpenSea{
+    font-size: 7px;
+  }
+  .musicState{
+    font-size: 7px;
+  }
+
+}
+
+@media all and (max-width: 1850px),
+screen and (max-height: 750px) {
+
+  .logo{
+    width: 60px;
+    height: 87px;
+  }
+
+  .icon-footer {
+    visibility: visible;
+  }
+
+}
+
+@media all and (max-height: 749px) {
+  .icon-footer {
+    visibility: hidden;
+  }
 }
