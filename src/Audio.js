@@ -55,7 +55,7 @@ class Music extends Component {
 
                 {/*Used for opensea link*/}
                 <a className="viewOpenSea"
-                    href="https://opensea.io/assets/0xfb3765e0e7ac73e736566af913fa58c3cfd686b7/9737">VIEW ON OPENSEA</a>
+                    href="https://opensea.io/assets/0xfb3765e0e7ac73e736566af913fa58c3cfd686b7/9737" target="_blank">VIEW ON OPENSEA</a>
 
             </div>
         );

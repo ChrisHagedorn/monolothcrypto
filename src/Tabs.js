@@ -1,6 +1,9 @@
 import {useState} from "react";
 import "./App.css";
 import logo from "./ourteamicon.png";
+import dario from "./teamphotos/dario.jpeg";
+import eliot from "./teamphotos/eliot.jpg";
+import cameron from "./teamphotos/cameron.jpg";
 
 import avax from "./cryptologos/avax.png"
 import btc from "./cryptologos/btc.png"
@@ -100,7 +103,7 @@ function Tabs() {
 
 
 
-                    <img src={logo} className="our-team-icons"/>
+                    <img src={eliot} className="our-team-icons"/>
                     <h2>Eliot Miailhe</h2>
                     <p>
                         Eliot has successfully privately managed cryptocurrencies, utilizing a variety of traditional finance strategies,
@@ -109,7 +112,7 @@ function Tabs() {
                     </p><br/>
                     </div>
                         <div className="our-team">
-                    <img src={logo} className="our-team-icons"/>
+                    <img src={dario} className="our-team-icons"/>
                     <h2>Dario Rizzuto</h2>
                     <p>
                         Dario first became engaged with cryptocurrencies in 2016 when he built an Ethereum mining computer.
@@ -119,7 +122,7 @@ function Tabs() {
                     </p><br/>
                         </div>
                         <div className="our-team">
-                    <img src={logo} className="our-team-icons"/>
+                    <img src={cameron} className="our-team-icons"/>
                     <h2>Cameron Hoffman</h2>
                     <p>
                         Prior to entering the crypto market, Cameron adopted an event driven strategy in longing and shorting traditional equities on behalf of his friends and family,
