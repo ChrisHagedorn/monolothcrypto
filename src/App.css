@@ -78,6 +78,14 @@ button {
 .content-tabs {
   flex-grow : 1;
 }
+
+.null-active-content{
+  display: block;
+  border-top: 0.5px solid white;
+  padding: 20px;
+  max-height: 100%;
+
+}
 .content {
   background-color: rgba(0,0,0,0.8);
   color: white;
@@ -156,6 +164,11 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+.logo:hover{
+  cursor: pointer;
+}
+
+
 .hrStyle{
   height: 2px;
   color: #ffffff;
@@ -349,8 +362,10 @@ button {
 screen and (max-height: 750px) {
 
   .logo{
-    width: 60px;
-    height: 87px;
+    width: 90px;
+    height: 131px;
+    margin-bottom: 15px;
+    margin-top: 10px;
   }
 
   .icon-footer {
@@ -359,7 +374,8 @@ screen and (max-height: 750px) {
 
 }
 
-@media all and (max-height: 749px) {
+@media all and (max-height: 749px),
+screen and (max-width: 859px){
   .icon-footer {
     visibility: hidden;
   }

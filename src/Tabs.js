@@ -1,6 +1,6 @@
 import {useState} from "react";
 import "./App.css";
-import logo from "./ourteamicon.png";
+import logo from "./logo.png";
 import dario from "./teamphotos/dario.jpeg";
 import eliot from "./teamphotos/eliot.jpg";
 import cameron from "./teamphotos/cameron.jpg";
@@ -15,7 +15,7 @@ import sol from "./cryptologos/sol.png"
 
 
 function Tabs() {
-    const [toggleState, setToggleState] = useState(1);
+    const [toggleState, setToggleState] = useState(0);
 
     const toggleTab = (index) => {
         setToggleState(index);
@@ -23,6 +23,14 @@ function Tabs() {
     };
 
     return (
+
+        <div>
+        <div>
+            <img className="logo" src={logo} onClick={() => toggleTab(0)}/>
+        </div>
+        <hr className="hrStyle"/>
+
+
         <div className="container">
 
 
@@ -60,16 +68,19 @@ function Tabs() {
 
 
             </div>
-
+            <div
+                className={toggleState === 0 ? "nullcontent   null-active-content" : "nullcontent"}
+            >
+            </div>
 
             <div className="content-tabs">
                 <div
                     className={toggleState === 1 ? "content  active-content" : "content"}
                 >
                     <p>
-                        Monolith is a cryptoasset investment fund. Our investment process is as
-                        simple as it gets, with capital being invested in all aspects of blockchain,
-                        such as cryptocurrencies, and products built on blockchain, like NFTs.
+                        Monolith is an investment firm committed to exceptional
+                        returns for investors through actively managed portfolios of blockchain assets,
+                        founded in 2021 by Cam Hoffman, Dario Rizzuto, and Eliot Miailhe.
                     </p>
                 </div>
 
@@ -146,7 +157,9 @@ function Tabs() {
                         The Securities and Exchange Comission has not passed upon the merits or approved the securities, the terms of the offering, or the accuracy of the materials.
                     </p>
                 </div>
+
             </div>
+        </div>
         </div>
     );
 }
