@@ -102,7 +102,7 @@ function Tabs() {
                     className={toggleState === 3 ? "content  active-content" : "content"}
                 >
                     <p>
-                        If you are interested in joining the Monolith family, send us an email at:
+                        If you are interested in investing with Monolith, send us an email at:
                     </p>
                     <br/><br/><br/>
                         <p>monolith.crypto@gmail.com</p>
